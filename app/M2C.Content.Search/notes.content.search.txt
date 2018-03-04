@@ -1,0 +1,2 @@
+﻿need following projects
+	M2C.Search.Abstractions

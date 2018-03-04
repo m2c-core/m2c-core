@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\M2C.Core.Abstractions\M2C.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\M2C.Core\M2C.Core.csproj" />
+    <ProjectReference Include="..\M2C.Content.Model\M2C.Content.Model.csproj" />
+  </ItemGroup>
+
+</Project>

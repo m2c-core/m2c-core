@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-M2C.Web-EA6701BB-C072-49E3-9F1B-68CD839F73E0</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\M2C.Core.Abstractions\M2C.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\M2C.Core\M2C.Core.csproj" />
+    <ProjectReference Include="..\..\src\M2C.Data.Abstractions\M2C.Data.Abstractions.csproj" />
+    <ProjectReference Include="..\M2C.Web.Controllers\M2C.Web.Controllers.csproj" />
+    <ProjectReference Include="..\M2C.Web.Data.MongoDb\M2C.Web.Data.MongoDb.csproj" />
+    <ProjectReference Include="..\M2C.Web.Middleware\M2C.Web.Middleware.csproj" />
+    <ProjectReference Include="..\M2C.Web.Model\M2C.Web.Model.csproj" />
+  </ItemGroup>
+
+</Project>
